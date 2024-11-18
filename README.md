@@ -123,40 +123,6 @@ To set up and run the Library Management API, ensure you have the following:
   - `status: fail` if the user is not found or token is invalid.
 
 ---
-
-### 5. Update User
-- **Endpoint:** `POST /user/updateuser`
-- **Description:** Updates user details.
-- **Request Body:**
-  ```json
-  {
-    "token": "string",
-    "username": "string (optional)",
-    "password": "string (optional)"
-  }
-  ```
-- **Response:**
-  - `status: success` if update is successful.
-  - `status: fail` if no changes are made or token is invalid.
-
----
-
-### 6. Delete User
-- **Endpoint:** `POST /user/deleteuser`
-- **Description:** Deletes a user account.
-- **Request Body:**
-  ```json
-  {
-    "token": "string",
-    "userid": "integer (optional)"
-  }
-  ```
-- **Response:**
-  - `status: success` if deletion is successful.
-  - `status: fail` if user is not found or token is invalid.
-
----
-
 ## Book Endpoints
 
 ### 1. Add Book
